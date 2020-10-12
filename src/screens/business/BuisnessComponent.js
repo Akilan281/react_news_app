@@ -58,9 +58,9 @@ function BuisnessComponent(props) {
         setbusiness(showless.slice(0, listcount))
     }
     return (
-        <div>
+        <div className="home-base" style={{ height: '100%' }}>
             {
-                errorGetList == '' ?
+                errorGetList == '' && businesslist ?
                     <div>
                         <div className="head-part  container-fluid">
                             {

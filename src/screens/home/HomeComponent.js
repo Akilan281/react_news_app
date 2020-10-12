@@ -66,7 +66,7 @@ function HomeComponent(props) {
     return (
         <div className="home-base" style={{ height: '100%' }}>
             {
-                errorGetList == '' ?
+                errorGetList == '' && homelist ?
                     <div>
                         <div >
 

@@ -59,9 +59,9 @@ function BuisnessComponent(props) {
         setwallnewslist(showless.slice(0, listcount))
     }
     return (
-        <div>
+        <div className="home-base" style={{ height: '100%' }}>
             {
-                errorGetList == '' ?
+                errorGetList == '' && wallnewslist ?
                     <div>
                         <div className="head-part  container-fluid">
                             {

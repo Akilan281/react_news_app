@@ -58,9 +58,9 @@ function BuisnessComponent(props) {
         setTechnewslist(showless.slice(0, listcount))
     }
     return (
-        <div>
+        <div className="home-base" style={{ height: '100%' }}>
             {
-                errorGetList == '' ?
+                errorGetList == '' && technewslist ?
                     <div>
                         <div className="head-part  container-fluid">
                             {
