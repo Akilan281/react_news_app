@@ -1,0 +1,26 @@
+.back-button{
+    margin: 50px;
+}
+.article{
+    background-color: rgb(42, 165, 159);
+    color: white;
+   text-align: center;
+}
+.article-body{
+    margin:25px 0px;
+    padding: 10px;
+  
+}
+.article-card{
+    border: none;
+}
+.article-image{
+    height: 450px; 
+    object-fit: cover;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.title{
+    color: red;
+}
