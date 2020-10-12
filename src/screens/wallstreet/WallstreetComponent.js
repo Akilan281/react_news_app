@@ -42,7 +42,7 @@ function BuisnessComponent(props) {
         let filterempty = Object.assign([], props.wallstreetnews);
         setwallnewslist(filterempty.slice(0, listcount))
     }
- //! For the search when the input value is coming from the search Component !//
+    //! For the search when the input value is coming from the search Component !//
     function setSearchList(data) {
         setwallnewslist(data)
     }
@@ -61,7 +61,7 @@ function BuisnessComponent(props) {
     return (
         <div>
             {
-                wallnewslist.length ?
+                errorGetList == '' ?
                     <div>
                         <div className="head-part  container-fluid">
                             {

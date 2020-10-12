@@ -19,7 +19,7 @@ function HomeComponent(props) {
     }, [])
 
 
-//!  Sending  the  API to the common API Communicator component !//
+    //!  Sending  the  API to the common API Communicator component !//
     function getHeadlines() {
         props.loaderAction(true)
         fetchGet('top-headlines?country=us&apiKey=28a63512b6e74ae9a7584f3be85e96ba', successGetHeadlines, errorGetHeadlines)
@@ -66,7 +66,7 @@ function HomeComponent(props) {
     return (
         <div className="home-base" style={{ height: '100%' }}>
             {
-                homelist.length ?
+                errorGetList == '' ?
                     <div>
                         <div >
 

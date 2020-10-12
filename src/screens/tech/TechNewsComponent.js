@@ -60,7 +60,7 @@ function BuisnessComponent(props) {
     return (
         <div>
             {
-                technewslist.length ?
+                errorGetList == '' ?
                     <div>
                         <div className="head-part  container-fluid">
                             {
@@ -96,10 +96,10 @@ function BuisnessComponent(props) {
                                     </div>
                             }
                         </div>
-                    </div>: <div className="error-messsage">
-                    {errorGetList}
+                    </div> : <div className="error-messsage">
+                        {errorGetList}
                     </div>
-           }
+            }
         </div >
     )
 }
